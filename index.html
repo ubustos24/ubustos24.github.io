@@ -8,7 +8,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
     :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --accent:#22d3ee; }
-    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#0b1222,#0f172a);}
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;
+      background:linear-gradient(180deg,#0b1222,#0f172a);
+    }
     .wrap{max-width:980px;margin:0 auto;padding:32px}
     header{display:flex;gap:16px;align-items:center;margin:24px 0 28px}
     .avatar{width:72px;height:72px;border-radius:50%;border:2px solid #1f2937;background:#1f2937}
@@ -36,11 +41,10 @@
       <img class="avatar" src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Profile" />
       <div>
         <h1>Ulises Bustos</h1>
-        <p>Clinical Research Coordinator · M.S. Data Science @ ASU (’26)  
-        <br>Bridging healthcare research and data-driven innovation.</p>
+        <p>Clinical Research Coordinator · M.S. Data Science @ ASU (’26)<br>
+        Bridging healthcare research and data-driven innovation.</p>
         <nav>
-          <!-- 🔗 Replace placeholders below with your actual contact links -->
-          <a href="ubustos24@gmail.com">Email</a>
+          <a href="mailto:ubustos24@gmail.com">Email</a>
           <a href="https://www.linkedin.com/in/ulisesbustos/">LinkedIn</a>
           <a href="https://github.com/ubustos24">GitHub</a>
           <a href="cv.html">CV</a>
@@ -52,20 +56,19 @@
     </header>
 
     <div class="hero">
-      <p><strong>Focus:</strong> data analysis, clinical research operations, reproducible workflows.  
-      <br><strong>Skills:</strong> Python, R, SQL, pandas, ggplot2, Quarto, Git/GitHub, REDCap.</p>
+      <p><strong>Focus:</strong> data analysis, clinical research operations, reproducible workflows.<br>
+      <strong>Skills:</strong> Python, R, SQL, pandas, ggplot2, Quarto, Git/GitHub, REDCap.</p>
     </div>
 
     <section id="projects" class="section">
       <h2>Projects</h2>
       <div class="grid">
-        <!-- Only one project: Source Builder -->
         <div class="card">
           <h3>Source Builder (CRC Toolkit)</h3>
           <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Healthcare</span>
-          <p>Generates IRB-compliant source templates (vitals, ECG, PK modules).  
-          Improves visit throughput and quality assurance in clinical research.</p>
-          <a class="btn" href="https://github.com/ubustos24/consulting-site">View on GitHub</a>
+          <p>Generates IRB-compliant source templates (vitals, ECG, PK modules). Improves visit throughput and QA.</p>
+          <a class="btn" href="https://github.com/ubustos24/consulting-site">GitHub</a>
+          <a class="btn" href="nhanes.html">View NHANES Project</a>
         </div>
       </div>
     </section>
@@ -80,8 +83,8 @@
 
     <section id="contact" class="section">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@email.com">you@email.com</a>  
-      <br>GitHub: <a href="https://github.com/ubustos24">@ubustos24</a></p>
+      <p>Email: <a href="mailto:ubustos24@gmail.com">ubustos24@gmail.com</a><br>
+      GitHub: <a href="https://github.com/ubustos24">@ubustos24</a></p>
     </section>
 
     <footer>© <span id="year"></span> Ulises Bustos</footer>
