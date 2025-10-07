@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ulises Bustos – Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#e5e7eb; --muted:#94a3b8; --accent:#22d3ee; }
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#0b1222,#0f172a);}
+    .wrap{max-width:980px;margin:0 auto;padding:32px}
+    header{display:flex;gap:16px;align-items:center;margin:24px 0 28px}
+    .avatar{width:72px;height:72px;border-radius:50%;border:2px solid #1f2937;background:#1f2937}
+    h1{color:var(--text);font-size:28px;margin:0}
+    p{color:var(--muted);line-height:1.55}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:18px}
+    .card{background:rgba(17,24,39,.65);border:1px solid #1f2937;border-radius:16px;padding:18px}
+    .card h3{margin:0 0 8px;color:var(--text);font-size:18px}
+    .tag{display:inline-block;font-size:12px;padding:2px 8px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;margin-right:6px}
+    .btn{display:inline-block;margin-top:10px;padding:10px 14px;border-radius:10px;border:1px solid #334155;color:#e5e7eb;text-decoration:none}
+    .btn:hover{border-color:#475569}
+    a{color:var(--accent);text-decoration:none}
+    footer{color:#64748b;margin:36px 0 12px;text-align:center}
+    nav{display:flex;gap:12px;flex-wrap:wrap}
+    nav a{border:1px solid #334155;border-radius:999px;padding:8px 12px;color:#cbd5e1}
+    nav a:hover{border-color:#475569}
+    .section h2{color:var(--text);font-size:22px;margin:22px 0 8px}
+    .list{padding-left:18px;color:#cbd5e1}
+    .hero{background:linear-gradient(90deg,rgba(34,211,238,.12),rgba(59,130,246,.12));border:1px solid #1f2937;border-radius:16px;padding:18px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/000000?v=4" alt="Profile" />
+      <div>
+        <h1>Ulises Bustos</h1>
+        <p>Clinical Research Coordinator → MS Data Science @ ASU (’26). Building data tools for healthcare & biotech.</p>
+        <nav>
+          <a href="mailto:you@email.com">Email</a>
+          <a href="https://www.linkedin.com/in/your-handle">LinkedIn</a>
+          <a href="https://github.com/ubustos24">GitHub</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="hero">
+      <p><strong>Focus:</strong> data analysis, clinical research operations, reproducible workflows. <br>
+      <strong>Skills:</strong> Python, R, SQL, pandas, ggplot2, Quarto, Git/GitHub.</p>
+    </div>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Source Builder (CRC Toolkit)</h3>
+          <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Healthcare</span>
+          <p>Generates IRB-compliant source templates (vitals, ECG, PK modules). Improves visit throughput and QA.</p>
+          <a class="btn" href="https://github.com/ubustos24/consulting-site">Repo</a>
+        </div>
+        <div class="card">
+          <h3>Procedure Time Modeling</h3>
+          <span class="tag">R</span><span class="tag">Linear Regression</span>
+          <p>Predicts total surgical time using multi-variate regression; boosts scheduling accuracy and OR planning.</p>
+          <a class="btn" href="#">Write-up</a>
+        </div>
+        <div class="card">
+          <h3>IUCN Red List DB</h3>
+          <span class="tag">SQL</span><span class="tag">Data Modeling</span>
+          <p>Enterprise schema + queries for conservation status analytics; ETL + reporting for species risk factors.</p>
+          <a class="btn" href="#">Case Study</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2>Experience</h2>
+      <ul class="list">
+        <li><strong>Clinical Research Coordinator, CHOC</strong> — Autism & neurodevelopment trials; EDC/REDCap, IWRS, SOPs.</li>
+        <li><strong>Graduate Projects, ASU</strong> — Statistical modeling, visualization (ggplot2), and reproducible reports.</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:you@email.com">you@email.com</a> · GitHub: <a href="https://github.com/ubustos24">@ubustos24</a></p>
+    </section>
+
+    <footer>© <span id="year"></span> Ulises Bustos</footer>
+  </div>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
