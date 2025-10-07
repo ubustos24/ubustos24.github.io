@@ -6,13 +6,45 @@
   <title>NHANES BMI–Diabetes Study – Ulises Bustos</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Inter, sans-serif; background:#0f172a; color:#e5e7eb; margin:0; padding:2rem; line-height:1.6; }
-    h1,h2,h3 { color:#fff; }
-    a { color:#22d3ee; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .container { max-width:900px; margin:auto; }
-    .btn { display:inline-block; background:#111827; border:1px solid #334155; padding:10px 14px; border-radius:10px; color:#e5e7eb; margin-top:12px; }
-    .btn:hover { border-color:#475569; }
+    :root {
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --muted: #475569;
+      --accent: #0284c7;
+      --border: #e2e8f0;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    h1, h2 { color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 14px;
+      text-decoration: none;
+      margin-top: 12px;
+    }
+    .btn:hover { background: #0369a1; }
+    ul { padding-left: 18px; color: var(--muted); }
+    hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
   </style>
 </head>
 <body>
@@ -23,30 +55,30 @@
     <hr>
 
     <h2>Research Focus</h2>
-    <p>Examined whether obesity is associated with a higher prevalence of diabetes among U.S. adults using CDC NHANES data. Conducted descriptive statistics, data visualization, and hypothesis testing using R.</p>
+    <p>Examined whether obesity is associated with a higher prevalence of diabetes among U.S. adults using the CDC NHANES dataset. Conducted data cleaning, descriptive analysis, and hypothesis testing in R.</p>
 
     <h2>Methods</h2>
     <ul>
-      <li>Filtered NHANES data to include adults (≥18 years).</li>
+      <li>Filtered data for adults (≥18 years).</li>
       <li>Grouped participants into Normal (18.5–24.9) and Obese (≥30) BMI categories.</li>
-      <li>Applied a two-sample test for equality of proportions to evaluate diabetes prevalence.</li>
-      <li>Visualized prevalence and BMI distributions using ggplot2.</li>
+      <li>Applied a two-sample test for equality of proportions to compare diabetes prevalence.</li>
+      <li>Visualized BMI distributions and prevalence rates using ggplot2.</li>
     </ul>
 
     <h2>Key Results</h2>
     <ul>
-      <li>Sample size: N = 4,833 adults.</li>
-      <li>Diabetes prevalence: 4.5% (Normal) vs. 16.2% (Obese).</li>
-      <li>Chi-square = 166.37, p &lt; 0.001 — significant difference in proportions.</li>
+      <li>Sample size: N = 4,833 adults</li>
+      <li>Diabetes prevalence: 4.5% (Normal) vs 16.2% (Obese)</li>
+      <li>Chi-square = 166.37, p &lt; 0.001 — statistically significant difference</li>
     </ul>
 
     <h2>Conclusion</h2>
-    <p>Findings support that obesity significantly increases diabetes prevalence among U.S. adults. This analysis demonstrates how public health data and statistical modeling can inform disease prevention strategies.</p>
+    <p>Obesity was strongly associated with higher diabetes prevalence among U.S. adults. These findings reinforce the importance of weight control interventions to reduce public health risks of diabetes.</p>
 
-    <h2>Full Report</h2>
     <a class="btn" href="NHANES Project.pdf" download>Download Full Report (PDF)</a>
 
     <p><a href="index.html">← Back to Portfolio</a></p>
   </div>
 </body>
 </html>
+
