@@ -6,32 +6,60 @@
   <title>CV – Ulises Bustos</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Inter, sans-serif; background:#0f172a; color:#e5e7eb; margin:0; padding:2rem; line-height:1.6; }
-    h1,h2 { color:#fff; }
-    a { color:#22d3ee; text-decoration:none; }
-    a:hover { text-decoration:underline; }
-    .container { max-width:900px; margin:auto; }
-    .btn { display:inline-block; background:#111827; border:1px solid #334155; padding:10px 14px; border-radius:10px; color:#e5e7eb; margin-top:12px; }
-    .btn:hover { border-color:#475569; }
+    :root {
+      --bg: #f8fafc;
+      --text: #1e293b;
+      --muted: #475569;
+      --accent: #0284c7;
+      --border: #e2e8f0;
+    }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    h1, h2, h3 { color: var(--text); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 850px; margin: auto; background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 2rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 10px;
+      padding: 10px 14px;
+      text-decoration: none;
+      margin-top: 12px;
+    }
+    .btn:hover { background: #0369a1; }
+    ul { padding-left: 18px; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Curriculum Vitae</h1>
-    <p><strong>Ulises Bustos</strong><br>
-    Clinical Research Coordinator | M.S. Data Science @ ASU (’26)</p>
+    <h1>Ulises Bustos</h1>
+    <p><strong>Clinical Research Coordinator</strong> · M.S. Data Science @ ASU (’26)</p>
 
-    <p><a class="btn" href="Ulises_Bustos_Data_Science_Resume.pdf" download>Download Full Resume (PDF)</a></p>
+    <p>Email: <a href="mailto:ubustos24@gmail.com">ubustos24@gmail.com</a><br>
+    LinkedIn: <a href="https://www.linkedin.com/in/ulisesbustos/">linkedin.com/in/ulisesbustos</a></p>
 
-    <h2>Summary</h2>
-    <p>5+ years of experience as a Clinical Research Coordinator managing multi-site and NIH-funded trials. 
-    Skilled in clinical data systems (REDCap, Medidata, Vestigo), regulatory compliance, and statistical programming (Python, R, SQL, STATA). 
-    Passionate about integrating data science to improve trial efficiency and patient outcomes.</p>
+    <a class="btn" href="Ulises_Bustos_Data_Science_Resume.pdf" download>Download Full Resume (PDF)</a>
+
+    <hr>
+
+    <h2>Professional Summary</h2>
+    <p>Clinical research professional with 5+ years of experience managing multi-site and NIH-funded studies. 
+    Skilled in data collection, regulatory compliance, and statistical analysis using Python, R, SQL, and STATA. 
+    Currently pursuing an M.S. in Biological Data Science to integrate data-driven methods into clinical research and biotech innovation.</p>
 
     <h2>Education</h2>
     <ul>
-      <li><strong>Arizona State University</strong> – M.S. Biological Data Science (Expected 2026)</li>
-      <li><strong>University of California, Merced</strong> – B.A. Public Health (2020)</li>
+      <li><strong>Arizona State University</strong> — M.S. Biological Data Science (Expected 2026)</li>
+      <li><strong>University of California, Merced</strong> — B.A. Public Health (2020)</li>
     </ul>
 
     <h2>Experience</h2>
@@ -44,9 +72,9 @@
 
     <h2>Skills</h2>
     <ul>
-      <li>Python, R, SQL, STATA</li>
+      <li>Python, R, SQL, STATA, Excel, Tableau</li>
       <li>Clinical Data Systems: REDCap, Medidata, Vestigo</li>
-      <li>Statistical Modeling, Visualization, Data Wrangling</li>
+      <li>Data Wrangling, Statistical Modeling, Visualization</li>
       <li>Bilingual: English & Spanish</li>
     </ul>
 
